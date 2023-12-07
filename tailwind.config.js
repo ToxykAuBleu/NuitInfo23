@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+export default 
     darkMode: "media",
     content: [
         "./components/**/*.{js,vue,ts}",
