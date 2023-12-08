@@ -17,10 +17,13 @@
             </div>
         </div>
     </div>
+
+    <HomePage />
 </template>
 
 <script setup>
     import makeRequest from "~/components/functions/getRSS.js";
+    import HomePage from "~/components/HomePage.vue";
 
     const articles = ref([]);
 
