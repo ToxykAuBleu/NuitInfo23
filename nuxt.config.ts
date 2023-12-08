@@ -1,5 +1,4 @@
 export default defineNuxtConfig({
-<<<<<<< HEAD
     modules: [
         "@nuxtjs/tailwindcss",
         "@nuxtjs/color-mode"
@@ -8,14 +7,3 @@ export default defineNuxtConfig({
         classSuffix: "",
     }
 });
-=======
-  devtools: { enabled: true },
-  css: ['../assets/css/main.css'],
-  postcss: {
-    plugins: {
-      tailwindcss: {},
-      autoprefixer: {},
-    },
-  },
-})
->>>>>>> interfaceInfo
