@@ -1,75 +1,21 @@
-# Nuxt 3 Minimal Starter
-
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
-
-## Setup
-
-Make sure to install the dependencies:
-
-```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
+# Nuit de l'informatique 2023 - EcoNavy
+> [!WARNING]
+> Certaines fonctionnalités nécessitent la récupération d'information bloqués par les politiques CORS.
+# Installation
+Après avoir cloné ce dépot sur votre ordinateur, exécutez les commandes suivantes dans le répertoire:
 ```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
+npm i
 npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
+node .output/server/index.mjs
 ```
 
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+# Participants de l'équipe Les Infromagiciens
+[@ToxykAuBleu](https://github.com/ToxykAuBleu)  
+[@EstebanD0406](https://github.com/EstebanD0406)  
+[@idklilou](https://github.com/idklilou)  
+[@Loulipong](https://github.com/Loulipong)  
+[@Luc'HACK](https://github.com/lucas-luchack)  
+[@Mattis40](https://github.com/Mattis40)  
+[@Quentin1814](https://github.com/Quentin1814)  
+[@RGouaud](https://github.com/RGouaud)  
+[@TistouCode](https://github.com/TistouCode)  
