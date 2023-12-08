@@ -1,0 +1,54 @@
+{
+  "affirmations": [
+    {
+      "statement": "Les énergies renouvelables sont suffisamment efficaces pour remplacer les énergies fossiles.",
+      "response": true,
+      "justification": "Les énergies renouvelables sont de plus en plus efficaces et compétitives en raison de l'amélioration des technologies, de la baisse des coûts de production, et de leur durabilité environnementale."
+    },
+    {
+      "statement": "Les actions individuelles, comme le recyclage, ne font pas une grande différence dans la réduction des émissions de gaz à effet de serre.",
+      "response": false,
+      "justification": "Les actions individuelles contribuent significativement à la réduction des émissions en créant une demande pour des pratiques durables et en démontrant un engagement envers la protection de l'environnement."
+    },
+    {
+      "statement": "La technologie seule peut résoudre le problème du changement climatique.",
+      "response": false,
+      "justification": "Bien que la technologie soit cruciale, des changements comportementaux et politiques sont tout aussi nécessaires pour créer un environnement propice à l'adoption généralisée de solutions durables."
+    },
+    {
+      "statement": "La déforestation a un impact significatif sur le changement climatique.",
+      "response": true,
+      "justification": "La déforestation contribue de manière significative aux émissions de gaz à effet de serre en libérant du carbone stocké dans les arbres et en réduisant la capacité de la forêt à absorber le CO2."
+    },
+    {
+      "statement": "Les voitures électriques sont toujours plus polluantes que les voitures à essence en raison de la production des batteries.",
+      "response": false,
+      "justification": "Sur l'ensemble de leur cycle de vie, les voitures électriques sont généralement plus écologiques, surtout avec l'amélioration de la production de batteries et la transition vers des sources d'électricité plus propres."
+    },
+    {
+      "statement": "Les solutions pour lutter contre le changement climatique sont trop coûteuses pour être mises en œuvre.",
+      "response": false,
+      "justification": "Investir dans des solutions climatiques peut être économiquement rentable à long terme, avec des bénéfices tels que la création d'emplois, la réduction des coûts liés aux catastrophes naturelles et la préservation des ressources naturelles."
+    },
+    {
+      "statement": "Les pays en développement contribuent de manière significative au changement climatique.",
+      "response": true,
+      "justification": "Les émissions des pays en développement sont également importantes, bien que souvent proportionnellement moindres par habitant, soulignant la nécessité d'une action mondiale collaborative."
+    },
+    {
+      "statement": "Les activités humaines ne sont pas la principale cause du réchauffement climatique.",
+      "response": false,
+      "justification": "Les activités humaines, en particulier les émissions de gaz à effet de serre provenant de la combustion de combustibles fossiles, sont la principale cause du réchauffement climatique selon un consensus scientifique."
+    },
+    {
+      "statement": "Les océans absorbent autant de CO2 que nous émettons, donc il n'y a pas de problème.",
+      "response": false,
+      "justification": "Bien que les océans absorbent du CO2, cela conduit à l'acidification des océans, créant des problèmes graves pour les écosystèmes marins."
+    },
+    {
+      "statement": "La transition vers des sources d'énergie propres créera des emplois significatifs.",
+      "response": true,
+      "justification": "La transition énergétique peut générer des emplois dans les secteurs des énergies renouvelables, de l'efficacité énergétique et de l'innovation technologique, contribuant ainsi à la croissance économique."
+    }
+  ]
+}
