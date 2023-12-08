@@ -52,6 +52,10 @@
     import makeRequest from "~/components/functions/getRSS.js";
     import HomePage from "~/components/HomePage.vue";
 
+    useHead({
+        title: "EcoNavy - Accueil",
+    })
+
     const articles = ref([]);
 
     async function fetchArticles() {

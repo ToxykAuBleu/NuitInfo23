@@ -14,6 +14,10 @@
 </template>
 
 <script>
+useHead({
+    title: "EcoNavy - À propos",
+})
+
 export default {
     name: "About",
 };

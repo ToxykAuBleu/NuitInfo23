@@ -73,6 +73,10 @@
 <script>
     import data from "~/assets/JSON/Questionnaire.json";
 
+    useHead({
+        title: "EcoNavy - Quiz",
+    })
+
     export default {
         data() {
             return {
