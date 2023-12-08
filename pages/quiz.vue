@@ -21,6 +21,9 @@
                     <button v-if="showJustification && !quizFinished" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button" @click="nextQuestion">
                         Suivant
                     </button>
+                    <button v-if="quizFinished" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button" @click="goToMainPage">
+                        Retourner étudier
+                    </button>
                 </div>
             </div>
         </div>
@@ -68,6 +71,9 @@ export default {
             } else {
                 this.comment = "Oh non ! Vous devez étudier davantage !";
             }
+        },
+        goToMainPage() {
+            this.$router.push('/');
         }
     }
 }
