@@ -1,7 +1,7 @@
 <template>
     <div class="pb-4" v-if="articles">
         <div class="pt-6 pl-6 mb-4">
-            <h1 class="text-4xl">Dernières actualités</h1>
+            <h1 class="text-4xl">Derniers articles</h1>
             <p class="italic">Données du Ministère de l'écologie</p>
         </div>
         <!-- carousel -->

@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="pb-4">
         <div class="flex flex-col items-center justify-center gap-6 mb-6">
             <div
                 class="flex items-center dark:bg-green-800 w-3/4 info-content mt-6 p-5 rounded-lg scale-up">
