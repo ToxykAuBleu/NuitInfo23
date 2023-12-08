@@ -5,15 +5,10 @@ async function retreiveData() {
 
 	try {
 		// Récupération des données GeoJSON.
-		const response = await fetch("https://www.data.gouv.fr/fr/datasets/r/259e1355-baa7-46af-9d84-260dc45d2863", {
-			method: 'GET',
-			headers: {
-				'Accept': 'application/json',
-				'Content-Type': 'application/json',
-				'mode': 'no-cors'
-			}
-
-		});
+		const corsUrl = 'https://cors-anywhere.herokuapp.com/';
+		const remoteUrl = 'https://raw.githubusercontent.com/ToxykAuBleu/NuitInfo23/main/public/data/prod-region-annuelle-enr.geojson';
+		const Url = corsUrl + remoteUrl;
+		const response = await fetch(Url);
 		if (!response.ok) {
 			throw new Error('La requête a échoué.');
 		}
