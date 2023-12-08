@@ -9,7 +9,7 @@
             <nuxt-link to="/a-propos" class="hover:underline">À propos</nuxt-link>
         </div>
     </div>
-    <div class="dark:bg-neutral-700 bg-gray-100 dark:text-white">
+    <div class="dark:bg-neutral-700 bg-gray-100 dark:text-white text-green-800">
         <slot />
     </div>
 </template>
