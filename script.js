@@ -7,8 +7,12 @@ async function retreiveData() {
 		// Récupération des données GeoJSON.
 		const corsUrl = 'https://cors-anywhere.herokuapp.com/';
 		const remoteUrl = 'https://raw.githubusercontent.com/ToxykAuBleu/NuitInfo23/main/public/data/prod-region-annuelle-enr.geojson';
-		const Url = corsUrl + remoteUrl;
-		const response = await fetch(Url);
+		const Url = corsUrl + remoteUrl
+		const response = await fetch(Url, { 
+			headers: {
+				'Origin': 'https://iutbayonne.univ-pau.fr'
+			}
+		});
 		if (!response.ok) {
 			throw new Error('La requête a échoué.');
 		}
