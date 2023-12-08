@@ -21,6 +21,20 @@
     <div class="dark:bg-neutral-700 bg-gray-100 dark:text-white text-green-800">
         <slot />
     </div>
+
+    <footer
+        class="flex flex-col bg-gray-200 dark:bg-neutral-800 justify-center items-center text-3xl dark:text-white py-2 px-4"
+    >
+        <img
+            src="~/assets/SVG/Logo_EcoNavySombre.svg"
+            alt="EcoNavy Logo"
+            class="w-50 h-20 dark:block hidden" />
+        <img
+            src="~/assets/SVG/Logo_EcoNavyClair.svg"
+            alt="EcoNavy Logo"
+            class="w-50 h-20 dark:hidden block" />
+        <p class=" text-xs">Développé avec ❤️ par les Infromagiciens</p>
+    </footer>
 </template>
 
 <script setup></script>
