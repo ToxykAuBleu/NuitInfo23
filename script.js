@@ -5,7 +5,15 @@ async function retreiveData() {
 
 	try {
 		// Récupération des données GeoJSON.
-		const response = await fetch("https://www.data.gouv.fr/fr/datasets/r/259e1355-baa7-46af-9d84-260dc45d2863");
+		const response = await fetch("https://www.data.gouv.fr/fr/datasets/r/259e1355-baa7-46af-9d84-260dc45d2863", {
+			method: 'GET',
+			headers: {
+				'Accept': 'application/json',
+				'Content-Type': 'application/json',
+				'mode': 'no-cors'
+			}
+
+		});
 		if (!response.ok) {
 			throw new Error('La requête a échoué.');
 		}
