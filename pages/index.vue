@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <section>
         <h1 class="text-2xl ml-4">Actualité</h1>
         <!-- carousel -->
         <div class="flex flex-wrap justify-between">
@@ -16,7 +16,7 @@
                 >
             </div>
         </div>
-    </div>
+    </section>
 
     <HomePage />
 </template>
