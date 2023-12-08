@@ -19,6 +19,7 @@
 <script>
 
 
+
 export default {
   methods: {
     goBack() {
@@ -33,6 +34,83 @@ export default {
     }
   }
 }
+
+
+class Tetromino {
+  constructor(tetromino, couleur) {
+    this.tetromino = tetromino;
+    this.couleur = couleur;
+
+    this.tetrominoN = 0;
+    this.activeTetromino = this.tetromino[this.tetrominoN];
+
+    this.x = 3;
+    this.y = -2;
+  }
+
+  positionerTetromino() {
+    for (let i = 0; i < this.activeTetromino.length; i++) {
+      for (let j = 0; j < this.activeTetromino.length; j++) {
+        if (this.activeTetromino[i][j]) {
+          grille[this.y + i][this.x + j] = this.couleur;
+        }
+      }
+    }
+  }
+
+  dessinerTetromino() {
+    for (let i = 0; i < this.activeTetromino.length; i++) {
+      for (let j = 0; j < this.activeTetromino.length; j++) {
+        if (this.activeTetromino[i][j]) {
+          dessinerCarre(this.x + j, this.y + i, this.couleur);
+        }
+      }
+    }
+  }
+
+  supprimerTetromino() {
+    for (let i = 0; i < this.activeTetromino.length; i++) {
+      for (let j = 0; j < this.activeTetromino.length; j++) {
+        if (this.activeTetromino[i][j]) {
+          grille[this.y + i][this.x + j] = null;
+        }
+      }
+    }
+  }
+
+
+  rotationTetromino() {
+    let nextPattern = this.tetromino[(this.tetrominoN + 1) % this.tetromino.length];
+    let deplacement = 0;
+
+    if (collision(0, 0, nextPattern)) {
+      if (this.x > LONGUEUR_GRILLE / 2) {
+        deplacement = -1;
+      } else {
+        deplacement = 1;
+      }
+    }
+
+    if (!collision(deplacement, 0, nextPattern)) {
+      this.supprimerTetromino();
+      this.x += deplacement;
+      this.tetrominoN = (this.tetrominoN + 1) % this.tetromino.length;
+    }
+  }
+
+    deplacementTetromino(x, y) {
+      if (!collision(x, y, this.activeTetromino)) {
+        this.supprimerTetromino();
+        this.x += x;
+        this.y += y;
+        this.positionerTetromino();
+      } else {
+        if (y == 1) {
+          this.fixationTetromino();
+        }
+      }
+    }
+  }
 
 //////////////////////////////
 ///////// TETROMINOS /////////
@@ -212,18 +290,6 @@ function fixationTetromino() {
 
 // Déplacement des tetrominos
 
-function deplacementTetromino(x, y) {
-  if (!collision(x, y, this.activeTetromino)) {
-    this.supprimerTetromino();
-    this.x += x;
-    this.y += y;
-    this.positionerTetromino();
-  } else {
-    if (y == 1) {
-      this.fixationTetromino();
-    }
-  }
-}
 
 // Collision des tetrominos
 
